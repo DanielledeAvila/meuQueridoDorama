@@ -5,7 +5,7 @@ from datetime import datetime
 # 1. CONFIGURAÇÃO DA PÁGINA E ESTILIZAÇÃO (Paleta: Rosa, Branco e Preto)
 st.set_page_config(
     page_title="Meu querido Dorama",
-    page_icon="🎬",
+    page_icon="icone.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
