@@ -56,6 +56,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+ st.image("logo.png", width=120)
+
 # 2. GERENCIAMENTO DE ESTADO (Simulando Firebase Auth e Firestore localmente para evitar custos de nuvem)
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
