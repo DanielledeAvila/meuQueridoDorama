@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
+st.image("logo.png", width=120)
+
 # 1. CONFIGURAÇÃO DA PÁGINA E ESTILIZAÇÃO (Paleta: Rosa, Branco e Preto)
 st.set_page_config(
     page_title="Meu querido Dorama",
@@ -56,7 +58,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
- st.image("logo.png", width=120)
+ 
 
 # 2. GERENCIAMENTO DE ESTADO (Simulando Firebase Auth e Firestore localmente para evitar custos de nuvem)
 if "logged_in" not in st.session_state:
