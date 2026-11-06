@@ -71,7 +71,7 @@ if "doramas_db" not in st.session_state:
 
 # 3. TELA DE LOGIN (Aguarda o usuário logar)
 if not st.session_state.logged_in:
-    st.title("🎬 Meu querido Dorama")
+    st.title("icone.png' 'Meu querido Dorama")
     st.subheader("Seu planner personalizado de Doramas")
     
     col1, col2, col3 = st.columns([1, 2, 1])
