@@ -70,9 +70,22 @@ if "doramas_db" not in st.session_state:
     ])
 
 # 3. TELA DE LOGIN (Aguarda o usuário logar)
+#if not st.session_state.logged_in:
+   # st.title("icone.png" "Meu querido Dorama")
+   # st.subheader("Seu planner personalizado de Doramas")
+
+    # 3. TELA DE LOGIN (Aguarda o usuário logar)
 if not st.session_state.logged_in:
-    st.title("icone.png" "Meu querido Dorama")
-    st.subheader("Seu planner personalizado de Doramas")
+    # Cria duas colunas: uma pequena para o ícone e uma grande para o texto
+    col_logo, col_titulo = st.columns([1, 5])
+    
+    with col_logo:
+        st.image("icone.png", use_container_width=True)
+        
+    with col_titulo:
+        st.title("Meu querido Dorama")
+
+    
     
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
